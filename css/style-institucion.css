@@ -1,0 +1,131 @@
+/* 
+Estilos generales del page
+*/
+.cuerpo-page{
+	background-color: white;
+	padding-top: 1em;
+}
+/* 
+Para imagenes
+*/
+.img-presentacion {
+	height: 40vh;
+	width: 100vw;
+}
+
+.img-institucion {
+	border-radius: 15%;
+	height: 10em;
+	
+	
+}
+.fondo-institucion {
+	background: #262424;
+	color: antiquewhite;
+}
+
+.bord-intitucional {
+	border: 1px solid white;
+	border-radius: 25px;
+}
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+.img-graduado{
+	height: 250px;
+}
+
+/* 
+PAra textos
+*/
+.titulo {
+	font-family: 'Patua One';
+	word-spacing: 5px;
+	font-weight: bold;
+	*text-shadow: 4px 2px 2px peru;
+	font-size: 40px;
+}
+.contenido-texto {
+	text-align: justify;
+	color: #333333;
+	font-size: 18px;
+}
+ .subtitulo {
+	font-size: 30px;
+}
+.t-especialidad {
+	font-size: 25px;
+	color: #333333 !important;
+}
+
+/* 
+Para la pagina single
+*/
+
+.sidebar {
+	background-color: aliceblue;
+}
+.t-siderbar {
+	color: #bd8d0b;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.t-especialidad-side {
+	font-weight: bold;
+}
+
+.t-mas-comunicado {
+	border-bottom: 3px solid black;
+	
+}
+.mas-comunicado {
+background-color: aliceblue; border-radius: 20px;	
+}
+
+
+
+/**Para modulos**/
+.h-modulo{
+	background-color: cadetblue;
+	padding: 2.5em;
+}
+.c-modulo{
+	border: 1px solid cadetblue;
+	text-transform: uppercase;
+}
+
+.c-modulo:hover{
+	background-color: cadetblue;
+	color: white;
+	transition: 1s linear;
+}
+/* 
+Para responsy
+*/
+@media only screen and(max-width:768px){
+	
+ .sidebar{
+  transition: all .3s ease-out;
+  overflow: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  *position: absolute;
+  *top: 64px;
+  bottom: 0;
+  height: 40em;	
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(201,199,191,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(250,250,250,0.5);
+}
+}

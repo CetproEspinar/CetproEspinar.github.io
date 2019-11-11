@@ -1,0 +1,432 @@
+/*
+Theme Name: Thema cetpro
+Theme URI:
+Author: Ronaldino Alcca K.
+Author URI:
+Description: Este es un tema creado para cetpro.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, two-columns, responsive layout
+Theme domain: Thema cetpro
+*/
+
+/*@import url(fonts/family=Open+Sans:300,400|Patua+One&display=swap&subset=latin-ext);*/
+/*@import url(bootstrap.css);*/
+/* @import url(/css/style-institucion.css); */
+
+*{
+	font-family:'Open Sans';
+}
+/*Para el imagen de wordpress**/
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+
+li{
+	list-style: none;
+}
+
+.textwidget{
+	color:white;
+    text-align: center;
+    *padding: 2em;
+}
+.textwidget>p{
+	color:black;
+    text-align: center;
+
+}
+footer div .textwidget>p{
+	color: #bfc7c1 !important;
+	text-align: justify;
+	font-size: 20px;
+}
+
+.text-white{
+	color: #bfc7c1;
+	text-align: justify;
+	font-size: 25px;
+}
+
+.menu{
+	list-style: none;
+}
+/*
+.caja-flex{
+	display: flex !important;
+	*flex-flow: columns wrap;
+	flex-direction: row !important;
+	justify-content: space-around !important;
+} */
+.menu-item{
+
+	padding: 0 40px !important;
+	font-size: 20px;
+}
+/* .menu-item>a{
+	color: #e6ede7 !important;
+	font-size: 25px;
+}
+
+.menu-item>a:hover{
+	color: #372f61 !important;
+	cursor: pointer;
+} */
+
+/*Para el fonfo main*/
+body{
+	background-color: cadetblue;
+}
+
+/*Para el header*/
+
+.imgpre {
+	background-image: url(img/fondomejorado.png);
+	height: 10em;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+
+
+
+}
+#t-page {
+	color: #daa520;
+	font-size: 4vw;
+	text-shadow: 6px 4px 4px black;
+	font-family: 'Patua One';
+	letter-spacing: 4px;
+	word-spacing: 10px;
+	font-weight: bold;
+}
+
+.logo {
+	height: 8em;
+	width: 8em;
+}
+
+
+.navbar {
+		position: -webkit-sticky; /* Safari */
+  	position: sticky;
+  	top: 0;
+		z-index: 1;
+		background-color: #daa520;
+		box-shadow: -1px 1px 11px 1px rgba(0,0,0.0.7);
+
+}
+.navbar ul li a{
+	color: #fff !important;
+	text-shadow: 3px 3px 5px black;
+	*background-color: cadetblue;
+	border-radius: 4px;
+	position: relative;
+}
+.navbar ul li a::before{
+	content:"";
+	display: block;
+	width:0;
+	height: 3px;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition: all 0.5s ease-out;
+}
+
+.navbar ul li a:hover::before{
+	width: 100%
+}
+.navbar ul li a:visited{
+	width: 100%
+	background:black;
+}
+
+.navbar ul li ul{
+	background-color: #efb810;
+}
+.navbar ul li ul li a:hover{
+	background-color: silver;
+}
+
+
+.navbar ul li a img{
+	height: 2em;
+
+}
+.navbar ul li a img:hover{
+	border-radius: 50%;
+	border: 4px solid #bfc7c1;
+
+}
+
+
+/*Para el menu*/
+.n2:hover{
+	border-bottom: 2px solid #bfc7c1;
+	border-top: 2px solid #bfc7c1;
+}
+
+
+.lmenu {
+	margin-left: 4em;
+	text-transform: uppercase;
+}
+/**Para el lema**/
+.lema{
+	*background-color: white;
+	*color: #51515;
+	color: peru;
+	padding-top: 8px;
+	font-size: 23px;
+	font-weight: bold;
+	text-shadow: 1px 3px 2px #0D0B02;
+}
+.contenedor marquee{
+	*position: absolute;
+
+}
+
+
+
+/**Fin de header**/
+/**Para el main**/
+.des-comunicacion {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+	color: white;
+	filter: opacity(.8);
+
+}
+.img-comunicado{
+	/*background-image: url('img/comunicados.jpg');*/
+	background-image: url(img/desfile.jpg);
+	background-position:top;
+	background-size:cover;
+	width: 100%;
+	height: 450px;
+	*background: rgba(0,0,0,.62);
+	*filter:brightness(0.2);
+	filter: saturate(120%);
+}
+.des-comunicacion h2 {
+	font-size: 6vw;
+	color:rgb(51,51,51);
+	font-style: italic;
+	font-family: -webkit-pictograph;
+	text-decoration: underline;
+}
+
+.des-comunicacion h2:hover {
+	color: #372f61;
+}
+
+.des-comunicacion h2 p{
+	font-size: 1vw;
+
+}
+.fragmento-comunicado{
+	color: cornflowerblue;
+}
+.f-publicacion{
+	border-top: 1px solid chocolate;
+	border-bottom: 1px solid chocolate;
+	color: chocolate;
+	margin-top: 5px;
+}
+
+.se-comunicado:hover {
+	*filter: saturate(180%);
+	*transition: all .5s ease-in-out;
+	cursor: pointer;
+
+}
+
+
+
+.img-destacada {
+	box-shadow: 2px 2px 2px 2px #888;
+	box-sizing: border-box;
+}
+
+/*seccion de Especialidades*/
+.tags h3{
+	background-color: #daa520;
+	padding: 3px;
+	padding: 4px;
+	border-right: 5px solid peru;
+	border-radius: 0px 20px 0px 20px;
+	color: aliceblue;
+	border-left: 5px solid peru;
+}
+
+
+.c1 {
+	*border: 5px solid black;
+	box-shadow: 5px 10px #888;
+	border-radius: 15px;
+	text-align: justify;
+	*filter: opacity(.5);
+	cursor: pointer;
+	background-color: white;
+
+}
+.c1 img{
+	border-radius: 30px;
+}
+
+/*Para botones de ver mas*/
+.btn-mas {
+	border: 5px solid #e3a024;
+	*background-color: #dba021;
+	color: #e3a024;
+	font-weight: 900;
+	font-size: 20px;
+
+}
+.btn-mas:hover {
+	background-color: #dba021;
+	color: #dbd8d0;
+	text-decoration: none;
+}
+/*Para el titulo de las especialidades */
+.t-Especialidad {
+	font-family: 'Patua One';
+	text-transform: uppercase;
+	color: #dba021;
+	font-weight: bold;
+	border-bottom: 2px solid brown;
+}
+/**Para forma de hoja**/
+.forma-hoja{
+	-webkit-border-radius: 9px 400px 0 500px;/*Safari, Chrome*/
+	-moz-border-radius: 9px 400px 0 500px;/*Firefox*/
+	border-radius: 9px 400px 0 500px;
+	background-color: brown;
+	box-shadow: -1px 11px 26px 26px rgba(0,0,0,0.7);
+}
+/**Para el footer**/
+footer{
+	color: white;
+	background-color: black;
+	text-align: justify;
+	background-image: url("img/fondofooter.jpeg");
+	*background: url("img/fondo-footer.png") no-repeat center;
+	*background-size: contain;
+
+	*background-image: url(img/fondomejorado.png);
+	*height: 10em;
+	background-position: center;
+  	background-repeat: no-repeat;
+  background-size: cover;
+}
+.t-footer {
+	text-transform: uppercase;
+	margin-top: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+.list-contacto{
+	list-style: none;
+
+}
+/* .list-contacto li {
+
+} */
+
+
+/**Para los modulos de single-especialidades**/
+.tabla{
+    *border: 4px solid black;
+    background-color: beige;
+    margin-left: auto
+
+}
+.t-header{
+    border: 2px solid green;
+}
+
+.t-contenido{
+    border: 2px solid green;
+}
+.lista-mo{
+    padding: 4px;
+}
+.lista-mo li{
+    list-style: none;
+    border: 2px solid peru;
+    padding: 5px;
+
+}
+/***para lista de cursos mas**/
+.list-cursos{
+	background-color: peru;
+	*height: 240px;
+}
+.lis-curso{
+		font-weight: bold;
+    color: #000;
+}
+
+
+
+
+/**Para Response**/
+@media only screen and (max-width: 1300px) {
+  .lmenu {
+	margin-left: 2em;
+	}
+}
+@media only screen and (max-width: 985px) {
+  .lmenu {
+	margin-left: 0.5em;
+	}
+}
+@media only screen and (max-width: 860px) {
+  .lmenu {
+	margin-left: 0em;
+	font-size: 12px;
+	}
+}
+@media only screen and (max-width: 790px) {
+  .lmenu {
+	margin-left: 0em;
+	}
+  .icono-home {
+	margin-left: 0em;
+	}
+}
+@media only screen and (max-width: 767px) {
+
+	.navbar ul li a{
+
+
+		background-color: peru;
+
+
+	}
+}
+
+@media only screen and (max-width: 550px) {
+  .fragmento-comunicado {
+	display: none;
+	}
+  .imgpre {
+	height: 7em;
+	}
+   .logo {
+	height: 5em;
+	width: 5em;
+
+	}
+}
