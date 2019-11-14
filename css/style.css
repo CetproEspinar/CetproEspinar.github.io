@@ -98,6 +98,20 @@ body{
 	border-top: 2px solid #bfc7c1;
 }*/
 
+/*Para el logo de facebook*/
+.logo-face{
+	background-color: blue;
+	position: relative;
+    left: 90%;
+    padding: 10px;
+    color: white;
+    font-family: fantasy;
+    /* font-size: xx-large; */
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
 
 .lmenu {
 	margin-left: 4em;
@@ -159,6 +173,7 @@ filter: brightness(110%);
 
 .img-destacada {
 	box-shadow: 2px 2px 2px 2px #888;
+	width: 100%;
 }
 
 /*seccion de Especialidades*/
@@ -236,6 +251,8 @@ footer{
 	color: white;
 	background-color: black;
 	text-align: justify;
+	padding-top: 10px;
+	padding-bottom: 20px;
 }
 .t-footer {
 	text-transform: uppercase;
